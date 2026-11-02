@@ -36,7 +36,7 @@ export default function Home() {
     <header className="nav-wrap">
       <nav className="nav container" aria-label="Navegação principal">
         <a href="#inicio" className="brand" aria-label={`${site.name} — início`}>
-          <Image src="/images/logo-carolina.jpg" alt="Carolina Rocha — Advocacia e Consultoria" width={500} height={500} priority className="brand-logo" />
+          <Image src="/images/logo-carolina.jpg" alt="Carolina Rocha — Advocacia e Consultoria" width={500} height={500} priority unoptimized className="brand-logo" />
         </a>
         <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
           {[['Início', '#inicio'], ['Sobre', '#sobre'], ['Atuação', '#atuacao'], ['Dúvidas', '#duvidas'], ['Contato', '#contato']].map(([label, href]) => <a key={href} href={href} onClick={() => setMenuOpen(false)}>{label}</a>)}
@@ -61,7 +61,7 @@ export default function Home() {
             <p className="hero-signature">{site.name} <span>·</span> {site.oab}</p>
           </div>
           <div className="hero-portrait">
-            <Image src="/images/hero-carolina.jpg" alt="Retrato profissional fornecido como referência visual para a demonstração" fill priority sizes="(max-width: 760px) 100vw, 48vw" className="hero-photo" />
+            <Image src="/images/hero-carolina.jpg" alt="Retrato profissional fornecido como referência visual para a demonstração" fill priority unoptimized sizes="(max-width: 760px) 100vw, 48vw" className="hero-photo" />
             <div className="portrait-caption"><span>IMAGEM DE DEMONSTRAÇÃO</span><span>ADVOCACIA</span></div>
           </div>
           <div className="hero-index" aria-hidden="true"><span>01</span><i /></div>
@@ -71,7 +71,7 @@ export default function Home() {
 
       <section className="about section" id="sobre">
         <div className="about-grid container">
-          <Reveal className="about-photo-wrap"><div className="about-photo-frame"><Image src="/images/portrait-about.webp" alt="Retrato fornecido como referência visual para a demonstração" fill sizes="(max-width: 760px) 88vw, 40vw" className="about-photo" /></div><span className="photo-note">IMAGEM DE DEMONSTRAÇÃO</span></Reveal>
+          <Reveal className="about-photo-wrap"><div className="about-photo-frame"><Image src="/images/portrait-about.webp" alt="Retrato fornecido como referência visual para a demonstração" fill unoptimized sizes="(max-width: 760px) 88vw, 40vw" className="about-photo" /></div><span className="photo-note">IMAGEM DE DEMONSTRAÇÃO</span></Reveal>
           <div className="about-content">
             <Reveal><p className="eyebrow">CONHEÇA A ADVOGADA</p><h2>Por trás de cada decisão jurídica, existe uma história que merece atenção.</h2></Reveal>
             <Reveal delay={0.1}><div className="about-copy"><p>O Escritório Exemplo apresenta uma atuação demonstrativa em Direito de Família e Sucessões.</p><p>A orientação jurídica deve ir além dos procedimentos e documentos. Ela precisa oferecer clareza, acolhimento e segurança em momentos importantes da vida.</p><p>Os serviços apresentados incluem inventários, divórcios e planejamento patrimonial, sempre considerando as particularidades de cada situação e a importância de decisões bem fundamentadas.</p></div></Reveal>
