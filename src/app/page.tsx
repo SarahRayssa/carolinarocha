@@ -36,11 +36,11 @@ export default function Home() {
     <header className="nav-wrap">
       <nav className="nav container" aria-label="Navegação principal">
         <a href="#inicio" className="brand" aria-label={`${site.name} — início`}>
-          <Image src="/images/logo-carolina.jpg" alt="Carolina Rocha — Advocacia e Consultoria" width={500} height={500} priority unoptimized className="brand-logo" />
+          <Image src="/images/logo-symbol.svg" alt="" width={190} height={198} priority unoptimized className="brand-logo" />
+          <span className="brand-name">Carolina Rocha<small>ADVOCACIA E CONSULTORIA</small></span>
         </a>
         <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
           {[['Início', '#inicio'], ['Sobre', '#sobre'], ['Atuação', '#atuacao'], ['Dúvidas', '#duvidas'], ['Contato', '#contato']].map(([label, href]) => <a key={href} href={href} onClick={() => setMenuOpen(false)}>{label}</a>)}
-          <ContactLink label="Entrar em contato pelo WhatsApp" className="nav-cta">Entrar em contato <ArrowUpRight size={15} /></ContactLink>
         </div>
         <button type="button" className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'} aria-expanded={menuOpen}>{menuOpen ? <X /> : <Menu />}</button>
       </nav>
@@ -51,14 +51,13 @@ export default function Home() {
         <div className="hero-grain" aria-hidden="true" />
         <div className="hero-inner container">
           <div className="hero-copy">
-            <p className="eyebrow light hero-enter">DIREITO DE FAMÍLIA E SUCESSÕES</p>
+            <p className="eyebrow light hero-enter">ADVOCACIA · DIREITO DE FAMÍLIA E SUCESSÕES</p>
             <h1><span>Decisões importantes</span><span>merecem orientação</span><em>jurídica e cuidado.</em></h1>
             <p className="hero-description hero-enter">Atuação em inventários, divórcios e planejamento patrimonial, com atendimento humanizado, clareza e segurança jurídica.</p>
             <div className="hero-actions hero-enter">
-              <ContactLink label="Ver contato demonstrativo" className="button button-champagne">Ver contato demonstrativo <ArrowRight size={18} /></ContactLink>
-              <p>Atendimento online e presencial<br />com hora marcada.</p>
+              <ContactLink label="Ver contato demonstrativo" className="button button-champagne">ENTRAR EM CONTATO <ArrowRight size={18} /></ContactLink>
             </div>
-            <p className="hero-signature">{site.name} <span>·</span> {site.oab}</p>
+            <p className="hero-signature">Atendimento online e presencial · com hora marcada</p>
           </div>
           <div className="hero-portrait">
             <Image src="/images/hero-carolina.jpg" alt="Retrato profissional fornecido como referência visual para a demonstração" fill priority unoptimized sizes="(max-width: 760px) 100vw, 48vw" className="hero-photo" />
@@ -66,6 +65,11 @@ export default function Home() {
           </div>
           <div className="hero-index" aria-hidden="true"><span>01</span><i /></div>
           <a href="#sobre" className="scroll-cue" aria-label="Ir para a seção sobre"><span>CONTINUE</span><ArrowDown size={14} /></a>
+        </div>
+        <div className="hero-marquee" aria-label="Carolina Rocha — Advocacia e Consultoria">
+          <div className="marquee-track" aria-hidden="true">
+            {[0, 1].map((group) => <div className="marquee-group" key={group}>{[0, 1, 2, 3].map((item) => <span className="marquee-item" key={item}><Image src="/images/logo-symbol.svg" alt="" width={42} height={44} unoptimized /><strong>CAROLINA ROCHA</strong></span>)}</div>)}
+          </div>
         </div>
       </section>
 
