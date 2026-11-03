@@ -60,8 +60,8 @@
 .hero-portrait{animation:none;mix-blend-mode:normal}
 .hero-photo{mix-blend-mode:normal}
 .hero-portrait:after{display:none}
-.hero-portrait{width:54%;height:calc(100% - 132px);bottom:66px;overflow:visible}
+.hero-portrait{width:54%;height:min(82svh,760px);bottom:66px;overflow:visible}
 .hero-photo{object-fit:contain;object-position:center bottom}
-@media(max-width:900px){.hero-portrait{width:54%;height:calc(75% - 62px);bottom:62px;overflow:visible}}
-@media(max-width:680px){.hero{min-height:900px}.hero-inner{min-height:900px}.hero-copy{padding-bottom:390px}.hero-portrait{right:-12px;width:min(104%,420px);height:420px;bottom:58px;overflow:visible}}
+@media(max-width:900px){.hero-portrait{width:54%;height:min(68svh,620px);bottom:62px}}
+@media(max-width:680px){.hero{min-height:900px}.hero-inner{min-height:900px}.hero-copy{padding-bottom:390px}.hero-portrait{right:-12px;width:min(104%,420px);height:min(52svh,420px);bottom:58px}}
 
