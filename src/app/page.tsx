@@ -61,7 +61,7 @@ export default function Home() {
           </div>
           <div className="hero-portrait">
             <Image src="/images/portrait-hero-atualizado.webp" alt="Retrato profissional fornecido como referência visual para a demonstração" fill priority unoptimized sizes="(max-width: 760px) 100vw, 48vw" className="hero-photo" />
-            <div className="portrait-brand-seal"><Image src="/images/selo-carolina-rocha.png" alt="Carolina Rocha — Advocacia e Consultoria" width={1254} height={1254} unoptimized /></div>
+            <div className="portrait-brand-seal"><Image src="/images/selo-carolina-rocha.webp" alt="Carolina Rocha — Advocacia e Consultoria" width={1254} height={1254} unoptimized /></div>
             <div className="portrait-caption"><span>IMAGEM DE DEMONSTRAÇÃO</span><span>ADVOCACIA</span></div>
           </div>
           <div className="hero-index" aria-hidden="true"><span>01</span><i /></div>
@@ -104,11 +104,3 @@ export default function Home() {
     <footer className="footer"><div className="container footer-inner"><a href="#inicio" className="footer-brand">{site.name.toUpperCase()} <span>·</span> ADVOCACIA</a><p>Direito de Família e Sucessões <span>·</span> {site.oab}</p><a href="#inicio" className="back-top">VOLTAR AO TOPO ↑</a><small>© {new Date().getFullYear()} {site.name}. Prévia demonstrativa com dados fictícios.</small></div></footer>
   </>;
 }
-
-
-
-
-
-
-
-
