@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import { ArrowRight, ArrowUpRight, Menu, X } from 'lucide-react';
+import { ArrowDown, ArrowRight, ArrowUpRight, Menu, X } from 'lucide-react';
 import { site, contactLink } from '@/config/site';
 import { trackEvent } from '@/lib/analytics';
 
@@ -67,9 +67,9 @@ export default function Home() {
           </div>
           <div className="hero-index" aria-hidden="true"><span>01</span><i /></div>
         </div>
-        <div className="hero-marquee" aria-label="Carolina Rocha — Advocacia e Consultoria">
+        <div className="hero-marquee" aria-label="Carolina Rocha">
           <div className="marquee-track" aria-hidden="true">
-            {[0, 1].map((group) => <div className="marquee-group" key={group}>{[0, 1, 2, 3].map((item) => <span className="marquee-item" key={item}><Image src="/images/logo-symbol.svg" alt="" width={42} height={44} unoptimized /><strong>CAROLINA ROCHA</strong></span>)}</div>)}
+            {[0, 1].map((group) => <div className="marquee-group" key={group}>{[0, 1, 2, 3].map((item) => <span className="marquee-item" key={item}><strong className="marquee-name"><span>CAROLINA</span><em>Rocha</em></strong><Image src="/images/logo-symbol.svg" alt="" width={42} height={44} unoptimized /></span>)}</div>)}
           </div>
         </div>
       </section>
@@ -79,14 +79,15 @@ export default function Home() {
           <p className="eyebrow light">PLANEJAMENTO E PROTEÇÃO PATRIMONIAL</p>
           <h2 id="planning-title">Você já pensou em como suas escolhas de hoje podem impactar o <span>futuro do seu patrimônio e da sua família?</span></h2>
           <div className="planning-copy">
-            <p>Casamento, união estável, aquisição de bens e organização da herança são decisões importantes que também envolvem questões jurídicas e patrimoniais.</p>
-            <p>Com orientação adequada, é possível organizar seus bens, definir seus objetivos e compreender as alternativas legais para proteger o que você construiu e planejar sua transmissão às próximas gerações.</p>
-            <p>O planejamento patrimonial permite tomar decisões com mais clareza e antecedência, respeitando a realidade de cada família e as possibilidades previstas em lei.</p>
+            <p><strong>Casamento, união estável, aquisição de bens e organização da herança</strong> são decisões importantes que também envolvem <strong>questões jurídicas e patrimoniais.</strong></p>
+            <p>Com orientação adequada, é possível <strong>organizar seus bens, definir seus objetivos</strong> e compreender as alternativas legais para <strong>proteger o que você construiu e planejar sua transmissão às próximas gerações.</strong></p>
+            <p>O planejamento patrimonial permite <strong>tomar decisões com mais clareza e antecedência</strong>, respeitando a realidade de cada família e as possibilidades previstas em lei.</p>
           </div>
-          <p className="planning-emphasis">Planejar hoje é uma forma de cuidar do amanhã e de quem é importante para você.</p>
+          <p className="planning-emphasis"><strong>Planejar hoje</strong> é uma forma de cuidar do amanhã e de quem é importante para você.</p>
           <p className="planning-services">Atuação em planejamento matrimonial e patrimonial, pactos antenupciais, contratos de união estável, testamentos e doações.</p>
           <ContactLink label="Entrar em contato" className="button button-champagne">ENTRAR EM CONTATO <ArrowUpRight size={18} /></ContactLink>
         </div>
+        <div className="planning-divider" aria-hidden="true"><ArrowDown size={19} /></div>
       </section>
 
       <section className="about section" id="sobre">
@@ -120,6 +121,7 @@ export default function Home() {
     <footer className="footer"><div className="container footer-inner"><a href="#inicio" className="footer-brand">CAROLINA ROCHA <span>·</span> ADVOCACIA E CONSULTORIA</a><p>Direito de Família e Sucessões <span>·</span> {site.oab}</p><nav className="footer-services" aria-label="Áreas de atuação"><a href="#inventario-partilha">Inventário e partilha</a><a href="#divorcio">Divórcio</a><a href="#planejamento-patrimonial">Planejamento patrimonial</a><a href="#testamentos-doacoes">Testamentos e doações</a></nav><a href="#inicio" className="back-top">VOLTAR AO TOPO ↑</a><small>© {new Date().getFullYear()} Carolina Rocha. Todos os direitos reservados. As informações deste site são informativas e não substituem a análise jurídica individualizada.</small></div></footer>
   </>;
 }
+
 
 
 
