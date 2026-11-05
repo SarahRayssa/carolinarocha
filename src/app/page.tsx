@@ -38,7 +38,7 @@ export default function Home() {
     <header className="nav-wrap">
       <nav className="nav container" aria-label="Navegação principal">
         <a href="#inicio" className="brand" aria-label={`${site.name} — início`}>
-          <Image src="/images/logo-carolina.jpg" alt="Carolina Rocha — Advocacia e Consultoria" width={2172} height={724} priority unoptimized className="brand-logo" />
+          <Image src="/images/logo-carolina.png" alt="Carolina Rocha — Advocacia e Consultoria" width={2172} height={724} priority unoptimized className="brand-logo" />
         </a>
         <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
           {[['Início', '#inicio'], ['Sobre', '#sobre'], ['Atuação', '#atuacao'], ['Dúvidas', '#duvidas'], ['Contato', '#contato']].map(([label, href]) => <a key={href} href={href} onClick={() => setMenuOpen(false)}>{label}</a>)}
