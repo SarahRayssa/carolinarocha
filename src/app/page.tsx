@@ -63,7 +63,6 @@ export default function Home() {
           </div>
           <div className="hero-portrait">
             <Image src="/images/portrait-hero-carolina.webp" alt="Retrato de Carolina Rocha" fill priority unoptimized sizes="(max-width: 760px) 100vw, 48vw" className="hero-photo" />
-            <div className="portrait-brand-seal"><Image src="/images/selo-carolina-rocha.webp" alt="Selo Carolina Rocha — Advocacia e Consultoria" width={1254} height={1254} unoptimized /></div>
             <div className="portrait-caption"><span>IMAGEM DE DEMONSTRAÇÃO</span><span>ADVOCACIA</span></div>
           </div>
           <div className="hero-index" aria-hidden="true"><span>01</span><i /></div>
@@ -72,6 +71,21 @@ export default function Home() {
           <div className="marquee-track" aria-hidden="true">
             {[0, 1].map((group) => <div className="marquee-group" key={group}>{[0, 1, 2, 3].map((item) => <span className="marquee-item" key={item}><Image src="/images/logo-symbol.svg" alt="" width={42} height={44} unoptimized /><strong>CAROLINA ROCHA</strong></span>)}</div>)}
           </div>
+        </div>
+      </section>
+
+      <section className="planning section" id="planejamento" aria-labelledby="planning-title">
+        <div className="planning-content container">
+          <p className="eyebrow light">PLANEJAMENTO E PROTEÇÃO PATRIMONIAL</p>
+          <h2 id="planning-title">Você já pensou em como suas escolhas de hoje podem impactar o <span>futuro do seu patrimônio e da sua família?</span></h2>
+          <div className="planning-copy">
+            <p>Casamento, união estável, aquisição de bens e organização da herança são decisões importantes que também envolvem questões jurídicas e patrimoniais.</p>
+            <p>Com orientação adequada, é possível organizar seus bens, definir seus objetivos e compreender as alternativas legais para proteger o que você construiu e planejar sua transmissão às próximas gerações.</p>
+            <p>O planejamento patrimonial permite tomar decisões com mais clareza e antecedência, respeitando a realidade de cada família e as possibilidades previstas em lei.</p>
+          </div>
+          <p className="planning-emphasis">Planejar hoje é uma forma de cuidar do amanhã e de quem é importante para você.</p>
+          <p className="planning-services">Atuação em planejamento matrimonial e patrimonial, pactos antenupciais, contratos de união estável, testamentos e doações.</p>
+          <ContactLink label="Entrar em contato" className="button button-champagne">ENTRAR EM CONTATO <ArrowUpRight size={18} /></ContactLink>
         </div>
       </section>
 

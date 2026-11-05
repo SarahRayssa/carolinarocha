@@ -86,3 +86,14 @@
 .hero-portrait{bottom:0}
 .portrait-brand-seal{bottom:84px}
 @media(max-width:680px){.portrait-brand-seal{bottom:70px}}
+.planning{position:relative;background:#10100f;color:#f5f0eb;text-align:center;padding:104px 0 110px}
+.planning-content{max-width:1020px}
+.planning .eyebrow{margin-bottom:22px}
+.planning h2{max-width:940px;margin:0 auto;font-family:var(--font-sans);font-size:clamp(31px,3.2vw,46px);font-weight:400;line-height:1.2;letter-spacing:-.045em}
+.planning h2 span{color:#e6bd9b}
+.planning-copy{max-width:710px;margin:27px auto 0;color:rgba(245,240,235,.76);font-size:13px;line-height:1.8}
+.planning-copy p{margin:0 0 16px}
+.planning-emphasis{margin:25px auto 0;color:#f0d0b5;font-family:var(--font-display);font-size:clamp(22px,2.3vw,29px);line-height:1.3}
+.planning-services{max-width:690px;margin:18px auto 28px;color:rgba(245,240,235,.64);font-size:10px;font-style:italic;line-height:1.7}
+.planning .button{margin-inline:auto}
+@media(max-width:680px){.planning{padding:76px 0 80px}.planning h2{font-size:clamp(29px,8vw,38px);line-height:1.17}.planning-copy{margin-top:21px;font-size:12px;line-height:1.75}.planning-emphasis{font-size:23px}.planning-services{font-size:10px}}
