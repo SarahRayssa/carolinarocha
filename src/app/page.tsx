@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import { ArrowDown, ArrowRight, ArrowUpRight, Menu, X } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Menu, X } from 'lucide-react';
 import { site, contactLink } from '@/config/site';
 import { trackEvent } from '@/lib/analytics';
 
@@ -62,12 +62,11 @@ export default function Home() {
             <p className="hero-signature">Atendimento online e presencial com hora marcada</p>
           </div>
           <div className="hero-portrait">
-            <Image src="/images/portrait-hero-atualizado.webp" alt="Retrato de Carolina Rocha" fill priority unoptimized sizes="(max-width: 760px) 100vw, 48vw" className="hero-photo" />
+            <Image src="/images/portrait-hero-carolina.webp" alt="Retrato de Carolina Rocha" fill priority unoptimized sizes="(max-width: 760px) 100vw, 48vw" className="hero-photo" />
             <div className="portrait-brand-seal"><Image src="/images/selo-carolina-rocha.webp" alt="Selo Carolina Rocha — Advocacia e Consultoria" width={1254} height={1254} unoptimized /></div>
             <div className="portrait-caption"><span>IMAGEM DE DEMONSTRAÇÃO</span><span>ADVOCACIA</span></div>
           </div>
           <div className="hero-index" aria-hidden="true"><span>01</span><i /></div>
-          <a href="#sobre" className="scroll-cue" aria-label="Ir para a seção sobre"><span>CONTINUE</span><ArrowDown size={14} /></a>
         </div>
         <div className="hero-marquee" aria-label="Carolina Rocha — Advocacia e Consultoria">
           <div className="marquee-track" aria-hidden="true">
