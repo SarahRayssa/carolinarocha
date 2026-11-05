@@ -127,10 +127,13 @@
 .marquee-item strong.marquee-name{display:flex;align-items:baseline;gap:5px;font-size:unset;font-weight:500;letter-spacing:0}
 .marquee-name span{font-family:var(--font-display);font-size:14px;letter-spacing:.045em}
 .marquee-name em{margin-left:-3px;color:#d7b5a7;font-family:var(--font-display);font-size:24px;font-style:italic;font-weight:500;line-height:.8;letter-spacing:-.045em}
-.planning-divider{position:absolute;z-index:4;left:50%;bottom:-27px;display:grid;width:220px;height:55px;place-items:start center;padding-top:12px;transform:translateX(-50%);border-radius:0 0 50% 50%;background:#10100f;color:#f0c899}
-.planning-divider svg{stroke-width:2.6}
+.planning-divider{position:absolute;z-index:4;left:50%;bottom:-50px;display:grid;width:60px;height:110px;place-items:start center;padding-top:12px;transform:translateX(-50%);border-radius:0 0 50% 50%;background:#10100f;color:#f0c899}
+.planning-divider svg{stroke: width 2.8em}
 @media(max-width:680px){.hero h1,.about h2,.practice h2,.faq h2,.contact h2,.planning h2{letter-spacing:-.04em}.planning h2{line-height:1.1}.planning-copy{margin-top:18px;font-size:11.5px;line-height:1.55}.planning-emphasis{font-size:22px}.marquee-name span{font-size:12px}.marquee-name em{font-size:21px}.marquee-item{gap:15px}.planning-divider{width:170px;height:47px;bottom:-23px;padding-top:10px}}
 .planning-divider{top:100%;bottom:auto;width:270px;height:54px;display:block;padding:0;border-radius:0 0 50% 50%;}
 .planning-divider svg{position:absolute;top:10px;left:50%;width:32px;height:24px;transform:translateX(-50%);stroke-width:3}
 @media(max-width:680px){.planning-divider{width:230px;height:46px}.planning-divider svg{top:8px}}
+.planning-divider{top:100%;bottom:auto;width:200px;height:100px;aspect-ratio:2;display:block;padding:0;border-radius:0;clip-path:polygon(50% 100%,100% 0,0 0);background:#10100f;-webkit-mask:linear-gradient(0deg,#0000 calc(25px / sqrt(2)),#000 0),radial-gradient(25px at 50% calc(100% - 25px * sqrt(2)),#000 98%,#0000 101%);mask:linear-gradient(0deg,#0000 calc(25px / sqrt(2)),#000 0),radial-gradient(25px at 50% calc(100% - 25px * sqrt(2)),#000 98%,#0000 101%)}
+.planning-divider svg{top:10px}
+@media(max-width:680px){.planning-divider{width:170px;height:85px}.planning-divider svg{top:8px}}
 
