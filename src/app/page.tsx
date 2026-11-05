@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import { ArrowDown, ArrowRight, ArrowUpRight, Menu, X } from 'lucide-react';
+import { ChevronDown, ArrowRight, ArrowUpRight, Menu, X } from 'lucide-react';
 import { site, contactLink } from '@/config/site';
 import { trackEvent } from '@/lib/analytics';
 
@@ -87,7 +87,7 @@ export default function Home() {
           <p className="planning-services">Atuação em planejamento matrimonial e patrimonial, pactos antenupciais, contratos de união estável, testamentos e doações.</p>
           <ContactLink label="Entrar em contato" className="button button-champagne">ENTRAR EM CONTATO <ArrowUpRight size={18} /></ContactLink>
         </div>
-        <div className="planning-divider" aria-hidden="true"><ArrowDown size={19} /></div>
+        <div className="planning-divider" aria-hidden="true"><ChevronDown size={32} /></div>
       </section>
 
       <section className="about section" id="sobre">
