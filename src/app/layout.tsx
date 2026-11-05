@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
+import { Cormorant_Garamond } from 'next/font/google';
 import './globals.css';
 import { site } from '@/config/site';
+
+const cormorantGaramond = Cormorant_Garamond({ subsets: ['latin'], weight: ['400', '500', '600'], variable: '--font-cormorant-garamond', display: 'swap' });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://carolina-rocha-advocacia.vercel.app'),
@@ -21,12 +24,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     '@type': 'LegalService',
     name: 'Carolina Rocha — Advocacia e Consultoria',
     url: 'https://carolina-rocha-advocacia.vercel.app',
-    image: 'https://carolina-rocha-advocacia.vercel.app/images/logo-carolina.jpg',
+    image: 'https://carolina-rocha-advocacia.vercel.app/images/logo-carolina-horizontal.webp',
     description: site.description,
     areaServed: { '@type': 'AdministrativeArea', name: 'Goiás' },
     knowsAbout: ['Direito de Família', 'Direito das Sucessões', 'Inventário e partilha', 'Divórcio', 'Planejamento patrimonial', 'Testamentos e doações'],
     employee: { '@type': 'Person', name: 'Carolina Rocha', jobTitle: 'Advogada', identifier: 'OAB/GO 61.499' },
   };
 
-  return <html lang="pt-BR"><body><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />{children}</body></html>;
+  return <html lang="pt-BR" className={cormorantGaramond.variable}><body><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />{children}</body></html>;
 }
